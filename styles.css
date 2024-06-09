@@ -5,7 +5,7 @@ body {
     background-color: rgb(51, 51, 51); /* Adjust the color and opacity as needed */
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-size: auto; /* Ensure the texture covers the entire background */
+    background-size: auto; /* Ensure the texture covers the entire back-ground */
     background-repeat: repeat; /* Repeat the texture if needed */
     color: #333;
     scroll-behavior: smooth;
@@ -120,7 +120,7 @@ nav ul li a:hover {
     margin: 0 auto;
     padding: 2em;
     animation: slideIn 1s ease-in-out;
-    background: rgba(255, 255, 255, 0.8); /* Adjust the alpha value to control transparency */
+    background: rgba(255, 255, 255, 0.8); /* Adjust the alpha value to con-trol transparency */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow for glass effect */
 }
@@ -247,7 +247,7 @@ section {
 .slick-prev, .slick-next {
     color: #fff; /* Change button color to white */
     font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent back-ground */
     padding: 10px; /* Increase button padding for better visibility */
     border-radius: 50%; /* Make buttons circular */
 }
@@ -257,18 +257,6 @@ section {
     background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
 }
 
-@media (max-width: 768px) {
-    .slider {
-        padding: 0;
-    }
-    .gallery-item.vertical video {
-        width: 100%;
-        height: auto;
-    }
-    .gallery-item.horizontal video {
-        width: 100%;
-    }
-}
 
 @keyframes fadeIn {
     from {
@@ -322,3 +310,197 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .btn {
+        padding: 0.6em 1.5em;
+    }
+    .container {
+        padding: 1.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .software-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .software-list li {
+        margin: 0.5em;
+    }
+    .portfolio-grid {
+        gap: 1.5em;
+    }
+    .gallery-item video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .contact-methods {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    .contact-methods div {
+        margin-bottom: 1em;
+    }
+    .contact-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em 0;
+    }
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0.5em;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content p {
+        font-size: 0.9em;
+    }
+    .btn {
+        padding: 0.5em 1.2em;
+    }
+    .container {
+        padding: 1em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    .software-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .software-list li {
+        margin: 0.5em;
+    }
+    .portfolio-grid {
+        gap: 1em;
+    }
+    .gallery-item video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .contact-methods {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    .contact-methods div {
+        margin-bottom: 1em;
+    }
+    .contact-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0.5em;
+    }
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+    .hero-content p {
+        font-size: 0.8em;
+    }
+    .btn {
+        padding: 0.4em 1em;
+    }
+    .container {
+        padding: 0.8em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
+    .software-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .software-list li {
+        margin: 0.5em;
+    }
+    .portfolio-grid {
+        gap: 0.5em;
+    }
+    .gallery-item video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .contact-methods {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5em;
+    }
+    .contact-methods div {
+        margin-bottom: 0.5em;
+    }
+    .contact-info {
+        text-align: center;
+    }
+}
+.notification {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 110, 64, 0.9); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    font-size: 1em;
+    text-align: center;
+}
+
+.notification.show {
+    display: block;
+    animation: fadeOut 5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
