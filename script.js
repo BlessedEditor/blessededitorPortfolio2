@@ -7,6 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
 document.querySelectorAll('.gallery-item').forEach(item => {
     const video = item.querySelector('video, iframe');
     video.addEventListener('play', () => {
@@ -15,6 +16,16 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     video.addEventListener('pause', () => {
         // Additional pause logic if needed
     });
+});
+document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth <= 768) { // Adjust the width as needed
+            const notification = document.getElementById('mobile-notification');
+            notification.classList.add('show');
+            setTimeout(() => 
+        {
+                notification.classList.remove('show');
+        }, 5000); // Adjust the time as needed
+    }
 });
 
 $(document).ready(function(){
